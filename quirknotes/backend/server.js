@@ -5,6 +5,7 @@ import cors from "cors";
 const app = express();
 const PORT = 4000;
 const dbName = "quirknotes";
+
 let mongoURL;
 if (process.env.ENV === 'Docker') {
   mongoURL = 'mongodb://mongodb:27017';

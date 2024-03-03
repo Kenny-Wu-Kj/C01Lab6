@@ -12,3 +12,9 @@ RUN npm install
 
 # Copy backend source code
 COPY quirknotes/backend ./
+
+# Expose port 3000 to serve the frontend
+EXPOSE 3001
+
+# Command
+CMD ["node", "server.js"]
